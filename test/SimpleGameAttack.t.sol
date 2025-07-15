@@ -14,7 +14,7 @@ contract SimpleGameAttackTest is Test {
         simpleGameAttack = new SimpleGameAttack(SIMPLE_GAME_ADDRESS);
     }
 
-    function testAttack() public {
+    function testSimpleGameAttack() public {
         simpleGameAttack.attack{value: 1 ether}();
 
         // Verify the results of the attack
